@@ -1,0 +1,37 @@
+{
+  "usuarios": [
+    {
+      "nombre": "usuario1",
+      "contrasena": "1234",
+      "rol": "usuario",
+      "id": "1"
+    },
+    {
+      "nombre": "usuario2",
+      "contrasena": "5678",
+      "rol": "admin",
+      "id": "2"
+    }
+  ],
+  "aceptamos": [
+    {
+      "id": "67d9",
+      "nombre": "usuario1",
+      "Sede": "desamparados",
+      "terminos": "on"
+    },
+    {
+      "id": "0fff",
+      "nombre": "usuario1",
+      "Sede": "desamparados",
+      "terminos": "on"
+    },
+    {
+      "id": "c051",
+      "nombre": "usuario1",
+      "Sede": "desamparados",
+      "terminos": "on"
+    }
+  ],
+  "historial": []
+}
