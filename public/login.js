@@ -5,6 +5,7 @@ const nombre = document.getElementById("nombre")
 const contrasena = document.getElementById("contrasena")
 const boton = document.getElementById("boton")
 
+//funcion asincrona con evento click para la obtencion de usuarios quemados//
 boton.addEventListener ("click", async function () {
     const usuariosRegistrados = await getUsuarios()
 

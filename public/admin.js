@@ -1,10 +1,10 @@
 import {getAceptamos} from './services/llamadosAcep.js'
 import { deleteHistorial } from './services/llamadosHist.js'
+import { updateHistorial } from './services/llamadosHist.js'
 
 
 const muestra = document.getElementById("listaMostrar")
-const aceptar = document.getElementById("aceptar")
-const rechazar = document.getElementById("rechazar")
+
 
 //funcion para mostrar nombre y sede ingresados en formulario de Estudiantes//
 mostrar()
@@ -23,26 +23,44 @@ console.log("recibido", resp);
 
     // creacion de botones con sus respectivos estilos//
             let botonEditar = document.createElement("button")
-            
-            botonEditar.textContent="Editar"
-            botonEditar.style.display= "block"
-            botonEditar.style.marginTop= "15px"
-            botonEditar.style.borderRadius= "5px"
+                botonEditar.textContent="Editar"
+                botonEditar.style.display= "block"
+                botonEditar.style.marginTop= "15px"
+                botonEditar.style.borderRadius= "5px"
             
         
             let botonEliminar = document.createElement("button")
-
-            botonEliminar.textContent= "Eliminar"
-            botonEliminar.style.display= "block"
-            botonEliminar.style.marginTop= "10px"
-            botonEliminar.style.borderRadius= "5px"
+                botonEliminar.textContent= "Eliminar"
+                botonEliminar.style.display= "block"
+                botonEliminar.style.marginTop= "10px"
+                botonEliminar.style.borderRadius= "5px"
             
             muestra.appendChild(u)
             muestra.appendChild(botonEditar)
             muestra.appendChild(botonEliminar)
     
-    //evento del boton editar al clickear//
-        botonEditar.addEventListener("click",function () {
+    //evento del boton editar al clickear creacion de la nueva edicion en patalla//
+        botonEditar.addEventListener("click", () => {
+            let inputNombre = document.createElement("input")
+            let inputSede = document.createElement("input")
+            let buttonRespuesta = document.createElement("button")
+            buttonRespuesta.textContent = "Confirmar edición"
+
+            u.appendChild(inputNombre)
+            u.appendChild(inputSede)
+            u.appendChild(buttonRespuesta)
+
+            inputNombre.value = resp[index].nombre
+            inputSede.value = resp[index].Sede
+
+
+            buttonRespuesta.addEventListener("click",async function() {
+                let actUsuario = {
+                    "nombre":inputNombre.value,
+                    "Sede":inputSede.value
+                }
+                await updateHistorial(actUsuario.nombre,actUsuario.Sede,resp[index].id)
+            })
             
         });
 

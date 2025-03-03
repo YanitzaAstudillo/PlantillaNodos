@@ -49,20 +49,19 @@ export{postHistorial}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateHistorial (nombre,contrasena,id) 
+async function updateHistorial (nombre,sede,id) 
 {
     try {
      
         const userData = { 
             nombre, 
-            contrasena,
-            rol: "usuario",
+            sede,
             id
         
         };
 
 
-        const response = await fetch("http://localhost:1919/historial/"+id, {
+        const response = await fetch("http://localhost:1919/aceptamos/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -87,7 +86,7 @@ export{updateHistorial}
 
 async function deleteHistorial(id) {
     try {
-        const response = await fetch(`http://localhost:1919/historial/${id}`, {
+        const response = await fetch(`http://localhost:1919/aceptamos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

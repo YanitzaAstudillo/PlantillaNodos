@@ -15,20 +15,25 @@
   ],
   "aceptamos": [
     {
-      "id": "67d9",
-      "nombre": "usuario1",
+      "nombre": "Pepelepu",
+      "Sede": "Puntarenas",
+      "id": "1d94"
+    },
+    {
+      "id": "6e8c",
+      "nombre": "pedrito",
       "Sede": "desamparados",
       "terminos": "on"
     },
     {
-      "id": "0fff",
-      "nombre": "usuario1",
-      "Sede": "desamparados",
+      "id": "8655",
+      "nombre": "maria",
+      "Sede": "puntarenas",
       "terminos": "on"
     },
     {
-      "id": "c051",
-      "nombre": "usuario1",
+      "id": "5170",
+      "nombre": "rosa",
       "Sede": "desamparados",
       "terminos": "on"
     }

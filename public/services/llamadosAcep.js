@@ -49,16 +49,13 @@ export{postUsuarios}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsuarios(nombre,contrasena,id) 
+async function updateUsuarios(nombre,sede,id) 
 {
     try {
      
         const userData = { 
             nombre, 
-            contrasena,
-            rol: "usuario",
-            id
-        
+            sede        
         };
 
 
