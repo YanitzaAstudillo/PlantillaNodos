@@ -1,5 +1,5 @@
 README
-El proyecto inicia desde el login del Sistema (index.js)  para entrar a la pag ppal, con dos unicos usuarios quemados (ubicados en db jon con llamados del "llamados.js":
+El proyecto inicia desde el Sistema (index.js) con un login para entrar a la pagina ppal, con dos unicos usuarios quemados (ubicados en db jon con llamados del "llamados.js":
 usuario1 contraseña 1234
 usuario2 contraseña 5678
 
