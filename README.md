@@ -1,6 +1,7 @@
 README
 El proyecto inicia desde el Sistema (index.js) con un login para entrar a la pagina ppal, con dos unicos usuarios quemados (ubicados en db jon con llamados del "llamados.js":
 usuario1 contraseña 1234
+ó
 usuario2 contraseña 5678
 
 *Una vez dentro de la pag ppal, (es ahí donde se hace la division de estudiante y admin (estudiante.js / admin.js)) puede entrar tanto como estudiante:
