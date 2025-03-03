@@ -12,3 +12,5 @@ usuario2 contraseña 5678 para poder eliminar o editar la informacion del formul
 a las solicitudes creadas en el formulario de estudiantes. Se edita el nombe y la sede (informacion suministrada en el formulario).
 ***Cabe acotar, que No fue la creacion de dos login, sino que quise hacer la division (est/ admin) dentro de la pag ppal, ya que me inspiré el la sub division del 
 Facebook (cuando un usuario tiene otra pag dentro del face para su emprendimiento con diferentes administradores para su pag o paginas).
+
+(En la funcion editar, solo logré editarlo en el db json pero no se refleja en pantalla. Funciona solo en el dbjson la edicion)
