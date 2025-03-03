@@ -5,7 +5,7 @@ usuario1 contraseña 1234
 usuario2 contraseña 5678
 
 *Una vez dentro de la pag ppal, (es ahí donde se hace la division de estudiante y admin (estudiante.js / admin.js)) puede entrar tanto como estudiante:
-usuario1 contraseña 1234  (para q accesar al formulario) como con cualquier otro nuevo estudiante (cualquiera q le de la imaginacion).
+usuario1 contraseña 1234  (para accesar al formulario) como con cualquier otro nuevo estudiante (cualquiera q le de la imaginacion).
 
 **A diferencia del acceso para administrdores, cual unicamnte entra con:
 usuario2 contraseña 5678 para poder eliminar o editar la informacion del formulario (almacenada en el db json como "aceptamos" con llamados en "llamadosAcep.js y llamadosHist") para accesar
